@@ -1,0 +1,31 @@
+.primary-aside {
+
+    max-width: 220px;
+    background-color: $bg-background;
+    color: white;
+}
+
+.event-wrapper {
+    background-color:$card-background;
+    height: 200px;
+    border-radius: 8px;
+    
+    text-align: center;
+}
+
+.image {
+    transform: rotate(-20deg);
+    height: 50px;
+    width: 80px;
+    margin-top: -40px;
+}
+.nav-item{
+    .nav-link{
+        color:#5c5d67 ;
+    }
+    &:hover{
+        .nav-text{
+            color:$primary ;
+        }
+    }
+}
