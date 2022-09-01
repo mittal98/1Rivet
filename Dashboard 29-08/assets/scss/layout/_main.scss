@@ -1,0 +1,47 @@
+#main {
+    padding: 20px;
+    background-color: #fafafa;
+
+}
+
+#main h4 {
+    color: #808080;
+    font-size: 12px;
+}
+
+.searchbar-wrapper {
+
+    display: flex;
+    width: 300px;
+    align-items: center;
+    background-color: white;
+   
+}
+
+.searchbar-wrapper .icon {
+    margin-left: 12px;
+    font-size: 16px;
+
+}
+
+.searchbar-wrapper #searchbar {
+    all: unset;
+    padding: 0 20px;
+    color: #abb1be;
+}
+
+.searchbar-wrapper ::placeholder {
+
+    color: #f3f5f4;
+    font-weight: 300;
+    font-family: "poppins,sans-serif";
+    font-size: 16px;
+}
+
+.btn {
+    all: unset;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(14, 172, 14);
+}

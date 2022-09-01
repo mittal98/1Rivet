@@ -1,0 +1,88 @@
+.card {
+    padding: 15px;
+    background-color: white;
+
+    &-row {
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 30px;
+    }
+
+    &-wrapper {
+        flex: 0 0 16.66%;
+        max-width: 16.66%;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+    }
+
+    &-icon-wrapper {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+// .card-row {
+//     flex-wrap: wrap;
+//     margin-left: -20px;
+//     margin-right: -20px;
+//     margin-bottom: 30px;
+// }
+// .card-wrapper {
+//     flex: 0 0 16.66%;
+//     max-width: 16.66%;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+
+// .card {
+//     padding: 15px;
+//     background-color: white;
+// }
+
+// .card-icon-wrapper {
+//     height: 40px;
+//     width: 40px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 50%;
+// }
+
+.icon-1 {
+    color: black;
+    background-color: #f2f2f2;
+}
+
+.icon-2 {
+    color: #3e9bf7;
+    background-color: #e9f4ff;
+}
+
+.icon-3 {
+    color: #14b170;
+    background-color: #e7f8f0;
+}
+
+.icon-4 {
+    color: #f58d2b;
+    background-color: #fff4e8;
+}
+
+.icon-5 {
+    color: #6c6ce2;
+    background-color: #f1f0ff;
+}
+
+.icon-6 {
+    color: #e76969;
+    background-color: #ffeeed;
+}

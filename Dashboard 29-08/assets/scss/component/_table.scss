@@ -1,0 +1,50 @@
+// table
+.table {
+    width: 100%;
+    border-spacing: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+thead {
+    font-weight: 500px;
+}
+
+tbody {
+    text-align: center;
+
+}
+
+tbody td {
+    padding: 10px;
+    background-color: white;
+    text-transform: capitalize;
+}
+
+thead tr th {
+    text-transform: capitalize;
+    background-color: white;
+    padding: 10px;
+}
+
+// // js table
+// .table {
+//     width: 100%;
+//     border-spacing: 0px 10px;
+//     font-family: 'Poppins', sans-serif;
+
+// }
+
+
+// .table .tbody td {
+//     padding: 10px;
+//     background-color: white;
+// }
+// .table .tbody{
+//     height: 500px;
+   
+// }
+// .table .thead tr th {
+//     text-transform: capitalize;
+//     background-color: white;
+//     padding: 10px;
+// }

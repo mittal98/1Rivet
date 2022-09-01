@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- google-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- awesome-fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- linkstylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="d-flex flex-direction h-100">
+        <header id="header">
+            <div class="d-flex align-items-center justify-content-between ">
+                <div class="d-flex align-items-center   ">
+                    <div><label for="togglesidebar"><span class="icon fa-regular fa-clone"></span></label></div>
+                    <div>
+                        <figure class="logo"><img class="img" src="assets/images/mcdonalds-logo.webp" alt=""></figure>
+                    </div>
+                    <div>
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href=""><span class="icon fa-solid fa-bell"></span></a>
+                    <a href="">
+                        <div class="profile-wrapper"><img src="assets/images/Cristiano_Ronaldo_2018.jpg" alt=""></div>
+                    </a>
+                    <a href=""><span class=" icon fa-solid fa-caret-down"></span></a>
+                </div>
+            </div>
+        </header>
+        <div class="d-flex flex-grow-1 overflow-hidden">
+            <input type="checkbox" id="togglesidebar">
+            <aside class="sidebar">
+                <div>
+                    <div>
+                        <h4>general</h4>
+                        <ul class="nav-list">
+                            <li class="nav-item mb-24"><a href="" class="nav-link active"><span
+                                        class="icon fa-solid fa-magnifying-glass"></span><span
+                                        class="nav-text">search</span></a></li>
+                            <li class="nav-item mb-24"><a href="" class="nav-link active"><span
+                                        class="icon fa fa-bell"></span><span class="nav-text">alerts</span></a></li>
+                            <li class="nav-item mb-24       "><a href="" class="nav-link active"><span
+                                        class="icon fa fa-tag"></span><span class="nav-text">tags</span></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>others</h4>
+                        <ul class="nav-list">
+                            <li class="nav-item mb-24"><a href="" class="nav-link active"><span
+                                        class="icon fa fa-gear"></span><span class="nav-text">settings</span></a>
+                            </li>
+                            <li class="nav-item mb-24"><a href="" class="nav-link active"><span
+                                        class="icon fa fa-address-book"></span><span class="nav-text">tips</span></a>
+                            </li>
+                            <li class="nav-item mb-24"><a href="" class="nav-link active"><span
+                                        class="icon fa fa-trash"></span><span class="nav-text">trash</span></a></li>
+                            <li class="nav-item mb-24"><a href="" class="nav-link active"><span
+                                        class="icon fa fa-sign-out"></span><span class="nav-text">logout</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <main id="main" class="flex-grow-1  ">
+                <div class="d-flex card-row ">
+                    <div class="card-wrapper ">
+                        <div class="d-flex card justify-content-between">
+                            <div>
+                                <h4>scores</h4>
+                                <h2>350</h2>
+                            </div>
+                            <div class="card-icon-wrapper icon-1"><span class="icon  fa-solid fa-barcode"></span></div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper ">
+                        <div class="d-flex card justify-content-between">
+                            <div>
+                                <h4>list</h4>
+                                <h2>350</h2>
+                            </div>
+                            <div class="card-icon-wrapper icon-2"><span class="icon fa-solid fa-list"></span></div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="d-flex card justify-content-between">
+                            <div>
+                                <h4>cost</h4>
+                                <h2>$345</h2>
+                            </div>
+                            <div class="card-icon-wrapper icon-3"><span class="icon  fa-solid fa-sack-dollar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="d-flex card justify-content-between">
+                            <div>
+                                <h4>buy now</h4>
+                                <h2>350</h2>
+                            </div>
+                            <div class="card-icon-wrapper icon-4"><span class="icon  fa-solid fa-cart-shopping"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper ">
+                        <div class="d-flex card justify-content-between">
+                            <div>
+                                <h4>buy cheaper</h4>
+                                <h2>350</h2>
+                            </div>
+                            <div class="card-icon-wrapper icon-5"><span class="icon  fa-solid fa-dollar-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="d-flex card justify-content-between">
+                            <div>
+                                <h4>buy healthier</h4>
+                                <h2>350</h2>
+                            </div>
+                            <div class="card-icon-wrapper icon-6"><span class="icon  fa-solid fa-heart-pulse"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>recent activity</h2>
+                    <div class="searchbar-wrapper ">
+                        <label for="searchbar"><span class="fa fa-search icon"></span></label>
+                        <input type="text" id="searchbar" name="search" onkeydown="filterData()"
+                            placeholder="search here">
+                        <button class="btn" type="button">filter</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <th>item</th>
+                            <th>date</th>
+                            <th>type</th>
+                            <th>est.cost</th>
+                            <th>last</th>
+                            <th>list</th>
+                            <th>auto</th>
+                            <th>buy now</th>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                    <div class="no-records d-none">No records found</div>
+                </div>
+        </div>
+        </main>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
