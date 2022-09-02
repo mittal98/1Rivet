@@ -1,0 +1,20 @@
+// Global styles goes here
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: $font-family-base;
+    background-color: black;
+  }
+  .logo{
+    height: 80px;
+  }
+
+  

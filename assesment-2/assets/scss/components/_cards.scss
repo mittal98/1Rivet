@@ -1,0 +1,14 @@
+.btn-primary{
+    color: white;
+}
+.btn-secondary{
+    color:#25aa9c;
+    background-color:#e8f7f4 ;
+    border: 1px solid #e8f7f4 ;
+}
+.card{
+    max-height: 500px;
+    .card-header{
+        z-index: 100;
+    }
+}

@@ -1,0 +1,37 @@
+.sidebar .brand {
+    height: 70px;
+   
+}
+
+
+.nav-list .nav-link:hover,
+.nav-list .nav-link.active {
+    background-color: lighten($color: $primary, $amount: 50%);
+    transition: .25s all;
+    font-weight: 500;
+}
+
+.nav-link:hover .icon,
+
+.nav-link:hover .nav-text {
+    color: $primary;
+
+}
+
+.nav-link .icon,
+.nav-link .nav-text {
+    color: #90a9af;
+}
+
+.nav-item {
+    &.active {
+        .nav-link {
+            background-color: #f6fafc;
+            color: $primary; 
+        }
+        .nav-icon {
+            color: $primary;
+            
+        }
+    }
+}

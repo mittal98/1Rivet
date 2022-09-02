@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- font-awasome -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- link-stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Dashboard with scss and bootstrap</title>
+</head>
+
+<body>
+    <div class="d-flex h-100">
+        <!-- aisde-start -->
+        <aside class="sidebar shadow">
+            <div class="logo ">
+                <a href="" class=" d-flex justify-content-center align-items-center h-100">
+                    <img src="assets/images/Bootstrap Assessment.jpg" class="h-100" alt="">
+                </a>
+            </div>
+            <!-- nav-start -->
+            <nav>
+                <ul class="nav-list p-0 m-0">
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link active d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3 ">
+                            <span class="icon fa-solid fa-gauge-simple-high mb-3"></span>
+                            <span class="nav-text pb-2">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3">
+                            <span class="icon fa-solid fa-hotel mb-3"></span>
+                            <span class="nav-text pb-2"> My Subscription</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3 ">
+                            <span class="icon fa-solid fa-landmark-dome  mb-3"></span>
+                            <span class="nav-text pb-2">My Studio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3">
+                            <span class="icon fa-solid fa-calendar mb-4"></span>
+                            <span class="nav-text pb-2">Post A Job </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-2 py-2 ">
+                            <span class="icon fa-solid fa-calendar-week  mb-3"></span>
+                            <span class="nav-text pb-2">My Events</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3">
+                            <span class="icon fa-solid fa-envelope mb-3"></span>
+                            <span class="nav-text pb-2">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3 ">
+                            <span class="icon fa-solid fa-gear mb-3"></span>
+                            <span class="nav-text pb-2">settings</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- nav-end -->
+        </aside>
+        <!-- aside-end -->
+        <div class="flex-grow-1 d-flex flex-column">
+            <!-- header-start -->
+            <header class="shadow d-flex align-items-center justify-content-between header overflow-auto">
+
+                <div class=" search-bar d-flex align-items-center mx-5">
+                    <label for="searchBar" class="fa-solid fa-magnifying-glass  me-3 mb-0"></label>
+                    <input type=" text" id="searchBar" placeholder="Search" class="search">
+                </div>
+                <div class="d-flex justify-content-center align-items-center ">
+                    <span class="icon fa-solid fa-bell me-3 notification"></span>
+                    <span class="me-3  ">Ryan Gosling</span>
+                    <div class="image-wrapper me-3">
+                        <img src="assets/images/Cristiano_Ronaldo_2018.jpg" class="rounded-circle " alt="">
+                    </div>
+                </div>
+
+            </header>
+            <!-- header-end -->
+            <!-- main-start -->
+            <main class="py-4 px-4 flex-grow-1 main overflow-auto">
+                <div class="container-fluid">
+                    <h1 class="fs-3 fw-bold">Dashboard</h1>
+                    <p class="">Hello,Ryan!Check out what's happening today!</p>
+                    <div class="d-flex w-100  mb-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center bg-white w-100 px-3">
+                            <div class=" d-flex p-2 justify-content-between align-items-center">
+                                <span class="fa-solid fa-circle-exclamation me-3"></span>
+                                <span class="me-3">Thanks for joining YPC! Go ahead and</span>
+                                <button class="btn btn-primary shadow">
+                                    create new
+                                </button>
+                            </div>
+                            <div> <span class="fa-solid fa-xmark"></span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100  mb-4 rounded">
+                        <div class="d-flex justify-content-between align-items-center bg-white w-100 px-3">
+                            <div class=" d-flex p-2 justify-content-between align-items-center">
+                                <span class="fa-solid fa-circle-exclamation me-3"></span>
+                                <span class="me-3">Thanks for joining YPC! Go ahead and</span>
+                                <button class="btn btn-secondary shadow">
+                                    create new
+                                </button>
+                            </div>
+                            <div> <span class="fa-solid fa-xmark"></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="card overflow-auto bg-white shadow-sm">
+                                <div
+                                    class="d-flex justify-content-between align-items-center  p-3 position-sticky top-0 card-header bg-white shadow-sm">
+                                    <h5 class="m-0 text-dark">New Brisbane Instructors-02</h5>
+                                    <div><span class="fa-regular fa-eye me-2"></span><span>View All</span></div>
+                                </div>
+                                <div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2 f-size">Thomas Budiman</h6>
+                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+                                        <div class="d-flex"><button class="btn btn-primary shadow me-3">
+                                                Part Time
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Aerial Yoga
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Yoga
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2">Fitness & Pilates Instructor</h6>
+                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+                                        <div class="d-flex"><button class="btn btn-secondary shadow me-3">
+                                                Part Time
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Full Time
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Yoga
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2">This is the opportunity for you</h6>
+                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+                                        <div class="d-flex"><button class="btn  btn-secondary shadow me-3">
+                                                Part Time
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Aerial Yoga
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Casual
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2">This is the opportunity for you</h6>
+                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+                                        <div class="d-flex"><button class="btn  btn-secondary shadow me-3">
+                                                Part Time
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Aerial Yoga
+                                            </button>
+                                            <button class="btn btn-secondary shadow me-3">
+                                                Casual
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="card overflow-auto bg-white shadow-sm">
+                                <div
+                                    class="d-flex justify-content-between align-items-center  p-3  card-header bg-white  position-sticky top-0 shadow-sm">
+                                    <h5 class="m-0 text-dark">New Brisbane Instructors-02</h5>
+                                    <div><span class="fa-regular fa-eye me-2"></span><span>View All</span></div>
+                                </div>
+                                <div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2 f-size">Thomas Budiman</h6>
+                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2 f-size">Thomas Budiman</h6>
+                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2 f-size">Thomas Budiman</h6>
+                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2 f-size">Thomas Budiman</h6>
+                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2">Fitness & Pilates Instructor</h6>
+                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+
+                                    </div>
+                                    <div class="border-bottom p-3">
+                                        <div class="d-flex justify-content-between align-items-centers">
+                                            <h6 class="mb-2">This is the opportunity for you</h6>
+                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                        </div>
+                                        <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- main-end -->
+        </div>
+    </div>
+    <link rel="stylesheet" href="script.js">
+</body>
+
+</html>
