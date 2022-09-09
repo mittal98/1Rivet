@@ -6,7 +6,7 @@
 
 .nav-list .nav-link:hover,
 .nav-list .nav-link.active {
-    background-color: lighten($color: $primary, $amount: 50%);
+    background-color: lighten($color: $primary, $amount: 60%);
     transition: .25s all;
     font-weight: 500;
 }
