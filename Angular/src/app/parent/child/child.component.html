@@ -1,0 +1,13 @@
+<div *ngFor="let item of childdata">
+    <p>{{item}}</p>
+</div>
+
+<div>
+    <h3>Add</h3>
+    <div><label for="">Name:</label>
+        <input type="text" [(ngModel)]="name">
+    </div>
+    <br>
+    <br>
+    <button (click)="onSubmit()">Submit</button>
+</div>

@@ -20,62 +20,77 @@
 <body>
     <div class="d-flex h-100">
         <!-- aisde-start -->
-        <aside class="sidebar shadow">
+        <aside class="sidebar shadow-sm  d-flex flex-column">
             <div class="logo ">
                 <a href="" class=" d-flex justify-content-center align-items-center h-100">
                     <img src="assets/images/Bootstrap Assessment.jpg" class="h-100" alt="">
                 </a>
             </div>
             <!-- nav-start -->
-            <nav class="">
+            <nav class="overflow-auto">
                 <ul class="nav-list p-0 m-0">
-                    <li class="nav-item">
+                    <li class="nav-item ">         
                         <a href=""
-                            class="nav-link active d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3 ">
+                            class="nav-link position-relative active d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3 ">
                             <span class="icon fa-solid fa-gauge-simple-high mb-3"></span>
                             <span class="nav-text pb-2">Dashboard</span>
-                        </a>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
+                        </a>                      
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
+                       
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3">
+                            class="nav-link position-relative d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3">
                             <span class="icon fa-solid fa-hotel mb-3"></span>
                             <span class="nav-text pb-2"> My Subscription</span>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3 ">
+                            class="nav-link d-flex position-relative flex-column justify-content-center align-items-center text-decoration-none  px-3 py-3 ">
                             <span class="icon fa-solid fa-landmark-dome  mb-3"></span>
                             <span class="nav-text pb-2">My Studio</span>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3">
+                            class="nav-link d-flex position-relative flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3">
                             <span class="icon fa-solid fa-calendar mb-4"></span>
                             <span class="nav-text pb-2">Post A Job </span>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-2 py-2 ">
+                            class="nav-link d-flex position-relative flex-column justify-content-center align-items-center  text-decoration-none  px-2 py-2 ">
                             <span class="icon fa-solid fa-calendar-week  mb-3"></span>
                             <span class="nav-text pb-2">My Events</span>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3">
+                            class="nav-link d-flex position-relative flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3">
                             <span class="icon fa-solid fa-envelope mb-3"></span>
                             <span class="nav-text pb-2">Notifications</span>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3 ">
+                            class="nav-link d-flex position-relative flex-column justify-content-center align-items-center  text-decoration-none  px-3 py-3 ">
                             <span class="icon fa-solid fa-gear mb-3"></span>
                             <span class="nav-text pb-2">settings</span>
+                            <div class="triangle position-absolute bottom-0 end-0">
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -84,9 +99,9 @@
             <!-- nav-end -->
         </aside>
         <!-- aside-end -->
-        <div class="flex-grow-1 d-flex flex-column shadow">
+        <div class="flex-grow-1 d-flex flex-column ">
             <!-- header-start -->
-            <header class=" d-flex align-items-center justify-content-between header overflow-auto">
+            <header class=" d-flex align-items-center shadow-sm position-relative justify-content-between header overflow-auto">
 
                 <div class=" search-bar d-flex align-items-center mx-5">
                     <label for="searchBar" class="fa-solid fa-magnifying-glass  me-3 mb-0"></label>
@@ -102,32 +117,32 @@
             </header>
             <!-- header-end -->
             <!-- main-start -->
-            <main class="py-4 px-4 flex-grow-1 main overflow-auto shadow">
+            <main class="py-4 px-4 flex-grow-1 main overflow-auto ">
                 <div class="container-fluid">
-                    <h1 class="fs-3 fw-bold">Dashboard</h1>
+                    <h4>Dashboard</h4>
                     <p class="">Hello,Ryan!Check out what's happening today!</p>
                     <div class="d-flex w-100  mb-4 rounded shadow-sm">
                         <div class="d-flex justify-content-between align-items-center bg-white w-100 px-2 py-2">
                             <div class=" d-flex p-2 justify-content-between align-items-center">
-                                <span class="fa-solid fa-circle-exclamation me-3"></span>
+                                <span class="fa-solid fa-circle-exclamation me-3 mark"></span>
                                 <span class="me-3">Thanks for joining YPC! Go ahead and</span>
                                 <button class="btn btn-primary shadow">
                                     create new
                                 </button>
                             </div>
-                            <div> <span class="fa-solid fa-xmark"></span></div>
+                            <div> <span class="fa-solid fa-xmark mark"></span></div>
                         </div>
                     </div>
-                    <div class="d-flex w-100  mb-4 rounded shadow">
+                    <div class="d-flex w-100  mb-4 rounded shadow-sm">
                         <div class="d-flex justify-content-between align-items-center bg-white w-100 px-2 py-2">
                             <div class=" d-flex p-2 justify-content-between align-items-center">
-                                <span class="fa-solid fa-circle-exclamation me-3"></span>
+                                <span class="fa-solid fa-circle-exclamation me-3 mark"></span>
                                 <span class="me-3">Thanks for joining YPC! Go ahead and</span>
                                 <button class="btn btn-secondary shadow">
                                     create new
                                 </button>
                             </div>
-                            <div> <span class="fa-solid fa-xmark"></span></div>
+                            <div> <span class="fa-solid fa-xmark mark"></span></div>
                         </div>
                     </div>
                     <div class="row">
@@ -136,13 +151,13 @@
                                 <div
                                     class="d-flex justify-content-between align-items-center  p-3 position-sticky top-0 card-header bg-white shadow-sm">
                                     <h5 class="m-0 text-dark">New Brisbane Instructors-02</h5>
-                                    <div><span class="fa-regular fa-eye me-2"></span><span>View All</span></div>
+                                    <div><span class="fa-regular fa-eye me-2 mark"></span><span>View All</span></div>
                                 </div>
                                 <div>
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2 f-size">Thomas Budiman</h6>
-                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
                                         <div class="d-flex"><button class="btn btn-primary shadow me-3">
@@ -159,7 +174,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2">Fitness & Pilates Instructor</h6>
-                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock  me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
                                         <div class="d-flex"><button class="btn btn-secondary shadow me-3">
@@ -176,7 +191,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2">This is the opportunity for you</h6>
-                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock  me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
                                         <div class="d-flex"><button class="btn  btn-secondary shadow me-3">
@@ -193,7 +208,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2">This is the opportunity for you</h6>
-                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock  me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
                                         <div class="d-flex"><button class="btn  btn-secondary shadow me-3">
@@ -215,13 +230,13 @@
                                 <div
                                     class="d-flex justify-content-between align-items-center  p-3  card-header bg-white  position-sticky top-0 shadow-sm">
                                     <h5 class="m-0 text-dark">New Brisbane Instructors-02</h5>
-                                    <div><span class="fa-regular fa-eye me-2"></span><span>View All</span></div>
+                                    <div><span class="fa-regular fa-eye me-2 mark"></span><span>View All</span></div>
                                 </div>
                                 <div>
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2 f-size">Thomas Budiman</h6>
-                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
 
@@ -229,7 +244,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2 f-size">Thomas Budiman</h6>
-                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
 
@@ -237,7 +252,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2 f-size">Thomas Budiman</h6>
-                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
 
@@ -245,7 +260,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2 f-size">Thomas Budiman</h6>
-                                            <div><span class="fa-regular fa-clock me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
 
@@ -253,7 +268,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2">Fitness & Pilates Instructor</h6>
-                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock  me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
 
@@ -261,7 +276,7 @@
                                     <div class="border-bottom p-3">
                                         <div class="d-flex justify-content-between align-items-centers">
                                             <h6 class="mb-2">This is the opportunity for you</h6>
-                                            <div><span class="fa-regular fa-clock  me-2"></span><span>5min</span></div>
+                                            <div><span class="fa-regular fa-clock  me-2 mark"></span><span>5min</span></div>
                                         </div>
                                         <p class="mb-3">24 Hours Fitness, | 1050 Browon street,Brisbane </p>
 
