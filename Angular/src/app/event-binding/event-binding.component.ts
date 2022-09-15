@@ -14,5 +14,6 @@ export class EventBindingComponent implements OnInit {
   }
   public handclick(): void {
     alert('Hello');
+   
   }
 }

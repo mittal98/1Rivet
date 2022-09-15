@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild,ElementRef } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -6,13 +6,13 @@ import { Component, EventEmitter, Input, OnInit, Output, ViewChild,ElementRef } 
   styleUrls: ['./child.component.scss']
 })
 export class ChildComponent implements OnInit {
-@ViewChild('username') username!:ElementRef<HTMLInputElement>;
+
   @Input() childdata: string[];
-name:string;
+  name: string;
   @Output() addData: EventEmitter<string>
 
   constructor() {
-    this.name="";
+    this.name = "";
     this.childdata = [];
     console.log(this.childdata);
     this.addData = new EventEmitter();
@@ -24,6 +24,6 @@ name:string;
   }
   onSubmit() {
     this.addData.emit(this.name);
-    this.username.nativeElement.value = "";
+    this.name = "";
   }
 }
