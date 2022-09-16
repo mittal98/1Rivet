@@ -13,13 +13,14 @@ public customerid:any;
     private activateroute:ActivatedRoute
   ) 
   {
-    this.title='Add customer';
-    this.customerid=activateroute.snapshot.params['customerid']
-    this.title=this.customerid?'Edit customer':'Add customer';
-
+    
+    this.customerid = activateroute.snapshot.params['customerid']
+    console.log(this.customerid,'id routtte');
+    
    }
 
   ngOnInit(): void {
+    this.title=this.customerid ? 'Edit customer':'Add customer';
     console.log(this.customerid)
   }
 
