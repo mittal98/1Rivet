@@ -1,4 +1,9 @@
-<a routerLink="cust-list">Customerlist</a>
-<br>
-<a routerLink="cust-form">Customerform</a>
-<router-outlet></router-outlet>
+<div class="d-flex  mt-2 ms-2">
+    <div>
+        <button class="btn btn-outline-primary me-3" type="submit" routerLink='customer-list'>customer-list</button>
+        <button class="btn btn-outline-primary" type="submit" routerLink='customer-form'>customer-form</button>
+        <div clas="d-flex justify-content-center align-items-center">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

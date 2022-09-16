@@ -10,14 +10,25 @@ const routes: Routes = [
     component: CustomerComponent,
     children:[
       {
-        path:'cust-list',
+        path:'customer-list',
         component:CustomerListComponent
       },
       {
-        path:'cust-form',
+        path:'customer-form',
         component:CustomerFromComponent
       }
     ] 
+  },
+  {
+    path:'edit/:customerid',
+    component:CustomerFromComponent
+  },
+ {
+  path:'add',component:CustomerFromComponent
+ },
+  {
+    path:':customerid',
+    component:CustomerListComponent
   }
 ];
 
