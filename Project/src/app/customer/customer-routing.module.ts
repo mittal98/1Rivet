@@ -5,6 +5,12 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerComponent } from './customer.component';
 
 const routes: Routes = [
+  {
+    path:'',
+    pathMatch:'full',
+    redirectTo:'customer-list'
+
+  },
   { 
     path: '', 
     component: CustomerComponent,
@@ -29,6 +35,9 @@ const routes: Routes = [
   {
     path:':customerid',
     component:CustomerListComponent
+  },
+  {
+    path:'cancel',component:CustomerListComponent
   }
 ];
 
