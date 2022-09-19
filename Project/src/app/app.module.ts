@@ -10,7 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LogoComponent } from './logo/logo.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 
 
@@ -25,7 +25,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LogoComponent,
     LogoutComponent,
     PageNotFoundComponent,
-    SidebarComponent,
+ 
  
  
   ],

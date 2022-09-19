@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+  public parentData: string[];
+
+  constructor() {
+    this.parentData = [];
+  }
+
+  ngOnInit(): void {
+    this.parentData = ["mittal"];
+
+  }
+ 
 }

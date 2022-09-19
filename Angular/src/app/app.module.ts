@@ -10,6 +10,11 @@ import { FormsModule } from '@angular/forms';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { UserFormComponent } from './user-form/user-form.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -20,11 +25,17 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
     EventBindingComponent,
     NgIfComponent,
     NgForComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    UserFormComponent,
+
+
+   
+ 
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
