@@ -10,6 +10,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { LogoComponent } from './logo/logo.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormsModule } from './forms/forms.module';
+import { SharedModule } from './shared/shared.module';
+import { PipeModule } from './pipe/pipe.module';
+
 
 
 
@@ -25,13 +29,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LogoComponent,
     LogoutComponent,
     PageNotFoundComponent,
- 
- 
- 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    SharedModule,
+    PipeModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

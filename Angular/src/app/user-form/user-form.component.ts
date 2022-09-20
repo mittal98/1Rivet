@@ -24,6 +24,6 @@ export class UserFormComponent implements OnInit {
 
   public onAdd() {
     this.issubmitted = true;
-    console.log(this.userForm.form.value);
+    console.log(this.userForm);
   }
 }

@@ -27,9 +27,6 @@ import { UserFormComponent } from './user-form/user-form.component';
     NgForComponent,
     NgSwitchComponent,
     UserFormComponent,
-
-
-   
  
   ],
   imports: [

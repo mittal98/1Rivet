@@ -1,0 +1,56 @@
+<h3>Inbuilt-Pipes</h3>
+
+<p class="text-danger">Currency Pipe</p>
+<ul>
+    <li>US: {{100 | currency:'CAD':"symbol-narrow" }}</li>
+</ul>
+
+<p class="text-danger">Lowercase Pipe</p>
+<ul>
+    <li>MITTAL: {{"MITTAL" | lowercase }}</li>
+</ul>
+
+<p class="text-danger">Uppercase Pipe</p>
+<ul>
+    <li>mittal: {{"mittal" | uppercase }}</li>
+</ul>
+
+<p class="text-danger">Titlecase Pipe</p>
+<ul>
+    <li>MITTAL PATEL: {{"MITTAL PATEL" | titlecase }}</li>
+</ul>
+
+<p class="text-danger">Date Pipe</p>
+<ul>
+    <li>Date: {{todayDate}}</li>
+    <li>{{todayDate | date:'medium'}}</li>
+    <li>{{todayDate | date:'long'}}</li>
+    <li>{{todayDate | date:'longDate'}}</li>
+    <li>{{todayDate | date:'shortTime'}}</li>
+    <li>{{todayDate | date:'short':'IST'}}</li>
+    <li>{{todayDate | date:'full'}}</li>
+    <li>{{todayDate | date:'shortDate'}}</li>
+    <li>{{todayDate | date:'mediumDate'}}</li>
+    <li>{{todayDate | date:'longTime'}}</li>
+    <li>{{todayDate | date:'fullDate'}}</li>
+    <li>{{todayDate | date:'mediumTime'}}</li>
+    <li>{{todayDate | date:'fullTime'}}</li>
+</ul>
+
+<p class="text-danger">Percentage Pipe</p>
+
+<ul>
+    <li>{{ 0.123456 | percent }}</li>
+    <li>{{ 0.123456 | percent: '2.1-2' }}</li>
+    <li>{{ 0.123456 | percent : "5.4-4" }}</li>
+</ul>
+<p class="text-danger">Decimal Pipe</p>
+<ul>
+    <li>{{ 3.14159265 | number: '3.1-2' }}</li>
+    <li>{{ 3.14159265 | number: '1.4-4' }}</li>
+    <li>{{ 112.34678 | number: '4.2-2'}}</li>
+</ul>
+
+
+
+
