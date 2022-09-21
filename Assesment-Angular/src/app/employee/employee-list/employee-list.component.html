@@ -1,0 +1,24 @@
+<h3>EMPLOYEE-LIST</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">NAME</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">D.O.B</th>
+            <th scope="col">SALARY</th>
+            <th scope="col">ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userdata">
+            <td>{{item.name}}</td>
+            <td>{{item.gender|uppercase}}</td>
+            <td>{{item.dob|date:'longDate'}}</td>
+            <td>{{item.salary| currency:'INR':'symbol-narrow' }}</td>
+            <td><button class="btn btn-outline-primary me-3" type="submit" routerLink="../employee-details">DETAILS</button>
+                <button class="btn btn-outline-success me-3" type="submit">EDIT </button>
+                <button class="btn btn-outline-danger me-3" type="submit">DELET</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
