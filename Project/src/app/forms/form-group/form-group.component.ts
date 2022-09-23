@@ -31,15 +31,11 @@ export class FormGroupComponent implements OnInit {
       address : ['',[Validators.required]],
       term: ['',[Validators.required]]
     })
-    this.userForm.patchValue(this.userdata)
-    
+    this.userForm.patchValue
   }
 
   onSubmit(){
     this.isSubmitted=true
     console.log(this.userForm)
-  }
-  reset(){
-    this.userForm.reset()
   }
 }

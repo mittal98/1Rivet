@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { User } from 'src/app/crud.model';
+import { UserServiceService } from 'src/app/shared/user-service.service'
 
 @Component({
   selector: 'app-employee-form',
@@ -11,13 +13,13 @@ export class EmployeeFormComponent implements OnInit {
   public formbuilder: FormBuilder;
   public isSubmitted: boolean = false;
   public userdata: any = [];
+  public data: User[];
 
-
-  constructor() {
+  constructor(private userservice: UserServiceService) {
     this.employeeForm = new FormGroup('');
     this.formbuilder = new FormBuilder;
 
-
+    this.data = []
   }
 
   ngOnInit(): void {
@@ -27,6 +29,8 @@ export class EmployeeFormComponent implements OnInit {
       dob: ['', [Validators.required,]],
       salary: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]],
     })
+
+    this.getUserdata()
 
   } public saveEmployee(): void {
     this.isSubmitted = true;
@@ -40,7 +44,7 @@ export class EmployeeFormComponent implements OnInit {
       this.isSubmitted = false;
       this.employeeForm.reset();
     }
-  } 
+  }
 
   public editEmployee(item: any): void {
     this.employeeForm.patchValue(item)
@@ -48,5 +52,11 @@ export class EmployeeFormComponent implements OnInit {
 
   public resetForm(): void {
     this.employeeForm.reset();
+  }
+  public getUserdata(): void {
+    this.userservice.getUser().subscribe((result) => {
+      this.data = result;
+      console.log(this.data)
+    });
   }
 }

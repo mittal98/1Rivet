@@ -7,7 +7,9 @@ import { Router } from '@angular/router';
 })
 export class EmployeeListComponent implements OnInit {
   employeelist: any = [];
-  @Input() userdata: any
+  @Input() userdata:any
+
+
   @Output() public edit: EventEmitter<any>;
   constructor(private router: Router) {
     this.employeelist = [];
