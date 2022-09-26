@@ -2,33 +2,31 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeComponent } from './employee.component';
 
-const routes: Routes = [{
-  path: '',
-  pathMatch: 'full',
-  redirectTo: 'employee-form'
-
-},
-{
-  path: '', component: EmployeeComponent,
+const routes: Routes = [
+  
+  { 
+    path: '',
+   component: EmployeeComponent ,
   children: [
     {
-      path: 'employee-list',
-      component: EmployeeListComponent
+      path : '',
+      component : EmployeeFormComponent
     },
     {
-      path: 'employee-form',
+      path: 'form',
       component: EmployeeFormComponent
     },
-
+    {
+      path: 'details',
+      component: EmployeeDetailsComponent
+    },
+    
+    
   ]
-},
-{
-  path: 'employee-details',
-  component: EmployeeDetailsComponent
-}];
+}
+]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
