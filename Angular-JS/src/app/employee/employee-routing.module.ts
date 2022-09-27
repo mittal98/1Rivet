@@ -15,14 +15,18 @@ const routes: Routes = [
       component : EmployeeFormComponent
     },
     {
-      path: 'form',
+      path: 'employee',
       component: EmployeeFormComponent
     },
+    {
+      path: 'edit/:id',
+      component: EmployeeFormComponent
+    },
+    
     {
       path: 'details',
       component: EmployeeDetailsComponent
     },
-    
     
   ]
 }

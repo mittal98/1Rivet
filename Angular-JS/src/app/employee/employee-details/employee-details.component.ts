@@ -13,5 +13,4 @@ export class EmployeeDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.employee = this.activatedroute.snapshot.queryParams;
   }
-
 }

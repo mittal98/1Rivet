@@ -70,4 +70,4 @@
     </div>
 </div>
 
-<app-employee-list [details]="data" ></app-employee-list>
+<app-employee-list [details]="data" (listData)="onEdit($event)"></app-employee-list>
