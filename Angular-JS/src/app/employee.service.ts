@@ -33,7 +33,7 @@ export class EmployeeService {
     return this.http.get(url)
    }
 
-   //update method
+   //update method(edit data)
    updateUser(user:User,id:number):Observable<any>{
     const url : string = this.baseUrl +  'employee/'+ id;
     return this.http.put(url,user)

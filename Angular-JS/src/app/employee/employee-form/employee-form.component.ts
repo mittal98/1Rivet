@@ -22,29 +22,28 @@ export class EmployeeFormComponent implements OnInit {
     this.formbuilder = new FormBuilder;
     this.userid = ''
     this.data = []
-    this.employeeForm = this.formbuilder.group({
 
+    this.employeeForm = this.formbuilder.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       gender: ['', [Validators.required, Validators.pattern(/^[A-Za-z]+$/)]],
       dob: ['', [Validators.required]],
       salary: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]]
     })
     this.isSubmitted = false;
+    // data get by id
     this.activatedRouter.params.subscribe((res: any) => {
-      this.userid = res.id
-      this.getUserById()
-
+      this.userid = res.id;
+      if (this.userid) {
+        this.getUserById()
+      }
     })
   }
-
-
   ngOnInit(): void {
     this.getUserdata();
   }
+  // save data
   public onSave(): void {
-    debugger
     this.isSubmitted = true;
-
     if (this.employeeForm.valid) {
       if (this.userid) {
         this.employeeService.updateUser(this.employeeForm.value, Number(this.userid)).subscribe(() => {
@@ -56,26 +55,23 @@ export class EmployeeFormComponent implements OnInit {
           this.getUserdata();
         })
       }
-
     }
-
   }
+  // reset Data
   onReset() {
     this.employeeForm.reset();
   }
   public getUserdata(): void {
     this.employeeService.getUser().subscribe((result: User[]) => {
       this.data = result;
-
     });
   }
   getUserById() {
     this.employeeService.getUserById(Number(this.userid)).subscribe((Response: User) => {
       this.employeeForm.patchValue(Response)
-
     })
-
   }
+  // edit data
   onEdit(item: any) {
     this.employeeForm.patchValue(item)
   }

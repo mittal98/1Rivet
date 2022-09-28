@@ -5,7 +5,6 @@ import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { EmployeeComponent } from './employee.component';
 
 const routes: Routes = [
-  
   { 
     path: '',
    component: EmployeeComponent ,
@@ -24,14 +23,12 @@ const routes: Routes = [
     },
     
     {
-      path: 'details',
+      path: 'details/:id',
       component: EmployeeDetailsComponent
-    },
-    
+    },  
   ]
 }
 ]
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
