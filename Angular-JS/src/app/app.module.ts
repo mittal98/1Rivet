@@ -8,6 +8,11 @@ import { CoreModule } from './core/core.module';
 import { EmployeeModule } from './employee/employee.module';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SubjectComponent } from './subject/subject.component';
+import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +20,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContactComponent,
     HomeComponent,
     PageNotFoundComponent,
+    SubjectComponent,
+    BehaviourSubjectComponent,
+    ReplaySubjectComponent,
+    AsyncSubjectComponent,
+    ObservableComponent,
 
   ],
   imports: [
