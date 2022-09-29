@@ -4,28 +4,28 @@
       "name": "mittal",
       "gender": "fgfhh",
       "dob": "2022-09-10",
-      "salary": 34234325,
+      "salary": 10000,
       "id": 1
     },
     {
       "name": "jinal",
       "gender": "saasf",
       "dob": "2022-09-23",
-      "salary": 3242525,
+      "salary": 10000,
       "id": 2
     },
     {
       "name": "nisha",
       "gender": "saasf",
       "dob": "2022-09-23",
-      "salary": 3242525,
+      "salary": 10000,
       "id": 3
     },
     {
       "name": "kiran",
       "gender": "saasf",
       "dob": "2022-09-23",
-      "salary": 3242525,
+      "salary": 10000,
       "id": 4
     }
   ]
