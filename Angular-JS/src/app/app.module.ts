@@ -14,6 +14,7 @@ import { ReplaySubjectComponent } from './replay-subject/replay-subject.componen
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ObservableComponent } from './observable/observable.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,6 @@ import { ObservableComponent } from './observable/observable.component';
     ReplaySubjectComponent,
     AsyncSubjectComponent,
     ObservableComponent,
-
   ],
   imports: [
     BrowserModule,

@@ -4,8 +4,10 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ObservableComponent } from './observable/observable.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { SubjectComponent } from './subject/subject.component';
 
 const routes: Routes = [{
   path: '',
@@ -19,8 +21,12 @@ const routes: Routes = [{
 {
   path: 'contact',
   component: ContactComponent
+},
+{
+  path: 'subject',
+  component: SubjectComponent
 }
-,
+  ,
 {
   path: 'async-subject',
   component: AsyncSubjectComponent
@@ -32,6 +38,10 @@ const routes: Routes = [{
 {
   path: 'replay-subject',
   component: ReplaySubjectComponent
+},
+{
+  path: 'observable',
+  component: ObservableComponent
 },
 { path: 'employee', loadChildren: () => import('./employee/employee.module').then(m => m.EmployeeModule) },
 {

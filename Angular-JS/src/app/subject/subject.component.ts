@@ -18,7 +18,6 @@ export class SubjectComponent implements OnInit {
     this.observer1 = this.subject.subscribe({
       next: (v) => {
         console.log(`data A : ${v}`);
-
       },
       error: (v) => {
 
@@ -46,8 +45,6 @@ export class SubjectComponent implements OnInit {
 
     this.subject.next(4)
     this.subject.next(5)
-
-
   }
 
   }

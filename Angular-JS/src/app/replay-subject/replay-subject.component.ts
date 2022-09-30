@@ -14,7 +14,8 @@ export class ReplaySubjectComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("Replay subject")
-    this.replay.next(6)
+    this.replay.next(9)
+    this.replay.next(8)
     this.replay1 = this.replay.subscribe({
       next: (v) => {
         console.log(`data A : ${v}`);
