@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
-import { concat, debounceTime, filter, forkJoin, from, fromEvent, interval, map, merge, observable, Observable, of, switchMap, take, takeUntil, tap, timer } from 'rxjs';
+import { concat, debounceTime, filter, forkJoin, from, fromEvent, interval, map, merge, Observable, of, take, takeUntil, tap, timer } from 'rxjs';
 import { ObservableService } from './observable.service';
 
 
@@ -34,7 +34,7 @@ export class ObservableComponent implements OnInit {
   //RxJS Operators
   ngAfterViewInit(): void {
     //of operator
-    of(1, 2, 3)
+    of(4, 5, 6)
       .pipe(map((x) => x * x))
       .subscribe((v) => this.service.display(v, 'list'))
 
@@ -68,7 +68,7 @@ export class ObservableComponent implements OnInit {
     console.log("merge");
     merge(
       of(1, 2, 3),
-      of(2, 4, 5, 6),
+      of(2, 3, 5, 6),
     ).subscribe(x => console.log(x));
 
     //forkjoin operator
