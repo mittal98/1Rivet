@@ -13,31 +13,32 @@ export class EmployeeService {
   }
   //get method
   getUser(): Observable<any> {
-    const url = this.baseUrl + "employee";
+    const url: string = this.baseUrl + "employee";
     return this.http.get(url);
   }
   //post method
-  addUser(userdata:User):Observable<any>{
-    const url : string = this.baseUrl +  'employee';
-    return this.http.post(url,userdata)
-   }
-
-   //delete method
-   deleteUser(id:number):Observable<any>{
-    const url : string = this.baseUrl +  'employee/'+id;
-    return this.http.delete(url)
-   }
-
-   getUserById(id:number):Observable<any>{
-    const url : string = this.baseUrl + 'employee/'+ id;
-    return this.http.get(url)
-   }
-
-   //update method(edit data)
-   updateUser(user:User,id:number):Observable<any>{
-    const url : string = this.baseUrl +  'employee/'+ id;
-    return this.http.put(url,user)
-   }
-  
+  addUser(userdata: User): Observable<any> {
+    const url: string = this.baseUrl + 'employee';
+    return this.http.post(url, userdata)
   }
+
+  //delete method
+  deleteUser(id: number): Observable<any> {
+    const url: string = this.baseUrl + 'employee/' + id;
+    return this.http.delete(url)
+  }
+
+  getUserById(id: number): Observable<any> {
+    const url: string = this.baseUrl + 'employee/' + id;
+    return this.http.get(url)
+  }
+
+  //update method(edit data)
+  updateUser(user: User, id: number): Observable<any> {
+    const url: string = this.baseUrl + 'employee/' + id;
+    return this.http.put(url, user)
+  }
+
+}
+
 

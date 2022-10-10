@@ -1,0 +1,114 @@
+<div class="container mt-4 border shadow p-4">
+    <form class="row g-3" [formGroup]="InternsForm">
+        <h4 class="text-center">INTERNS FORM</h4>
+        <div class="col-md-6">
+            <label class="form-label">FIRSTNAME</label>
+            <input type="text" class="form-control" formControlName="firstname"
+                [ngClass]="{'is-invalid' : formValidation['firstname'].invalid && (isSubmitted || formValidation['firstname'].touched || formValidation['firstname'].dirty),
+            'is-valid' : formValidation['firstname'].valid && (isSubmitted || formValidation['firstname'].touched || formValidation['firstname'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['firstname'].invalid && (isSubmitted || formValidation['firstname'].touched || formValidation['firstname'].dirty)">
+                <div *ngIf="formValidation['firstname'].errors && formValidation['firstname'].errors['required']"
+                    class="text-danger">firstname is required.</div>
+                <div *ngIf="formValidation['firstname'].errors?.['minlength']" class="text-danger">
+                    firstname shold have minimun 3 Characters.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">LASTNAME</label>
+            <input type="text" class="form-control" formControlName="lastname"
+                [ngClass]="{'is-invalid' : formValidation['lastname'].invalid && (isSubmitted || formValidation['lastname'].touched || formValidation['lastname'].dirty),
+            'is-valid' : formValidation['lastname'].valid && (isSubmitted || formValidation['lastname'].touched || formValidation['lastname'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['lastname'].invalid && (isSubmitted || formValidation['lastname'].touched || formValidation['lastname'].dirty)">
+                <div *ngIf="formValidation['lastname'].errors && formValidation['lastname'].errors['required']"
+                    class="text-danger">lastname is required.</div>
+                <div *ngIf="formValidation['lastname'].errors?.['minlength']" class="text-danger">
+                    lastname shold have minimun 3 Characters.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">EMAIL</label>
+            <input type="email" class="form-control" formControlName="email"
+                [ngClass]="{'is-invalid' : formValidation['email'].invalid && (isSubmitted || formValidation['email'].touched || formValidation['email'].dirty),
+            'is-valid' : formValidation['email'].valid && (isSubmitted || formValidation['email'].touched || formValidation['email'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['email'].invalid && (isSubmitted || formValidation['email'].touched || formValidation['email'].dirty)">
+                <div *ngIf="formValidation['email'].errors && formValidation['email'].errors['required']"
+                    class="text-danger">email is required.</div>
+                <div *ngIf="formValidation['email'].errors?.['pattern']" class="text-danger">
+                    email shold have only Characters.
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <label class="form-label">DEPARTMENT</label>
+            <input type="text" class="form-control" formControlName="department"
+                [ngClass]="{'is-invalid' : formValidation['department'].invalid && (isSubmitted || formValidation['department'].touched || formValidation['department'].dirty),
+            'is-valid' : formValidation['department'].valid && (isSubmitted || formValidation['department'].touched || formValidation['department'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['department'].invalid && (isSubmitted || formValidation['department'].touched || formValidation['department'].dirty)">
+                <div *ngIf="formValidation['department'].errors && formValidation['department'].errors['required']"
+                    class="text-danger">department is required.</div>
+                <div *ngIf="formValidation['department'].errors?.['minlength']" class="text-danger">
+                    department shold have minimun 3 Characters.
+                </div>
+                <div *ngIf="formValidation['department'].errors?.['pattern']" class="text-danger">
+                    department shold have only Characters.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">MOBILE</label>
+            <input type="number" class="form-control" formControlName="mobile"
+                [ngClass]="{'is-invalid' : formValidation['mobile'].invalid && (isSubmitted || formValidation['mobile'].touched || formValidation['mobile'].dirty),
+            'is-valid' : formValidation['mobile'].valid && (isSubmitted || formValidation['mobile'].touched || formValidation['mobile'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['mobile'].invalid && (isSubmitted || formValidation['mobile'].touched || formValidation['mobile'].dirty)">
+                <div *ngIf="formValidation['mobile'].errors && formValidation['mobile'].errors['required']"
+                    class="text-danger">mobile is required.</div>
+                <div *ngIf="formValidation['mobile'].errors?.['pattern']" class="text-danger">
+                    mobile shold have only numbers.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">CITY</label>
+            <input type="text" class="form-control" formControlName="city"
+                [ngClass]="{'is-invalid' : formValidation['city'].invalid && (isSubmitted || formValidation['city'].touched || formValidation['city'].dirty),
+            'is-valid' : formValidation['city'].valid && (isSubmitted || formValidation['city'].touched || formValidation['city'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['city'].invalid && (isSubmitted || formValidation['city'].touched || formValidation['city'].dirty)">
+                <div *ngIf="formValidation['city'].errors && formValidation['city'].errors['required']"
+                    class="text-danger">city is required.</div>
+                <div *ngIf="formValidation['city'].errors?.['minlength']" class="text-danger">
+                    city shold have minimun 3 Characters.
+                </div>
+                <div *ngIf="formValidation['city'].errors?.['pattern']" class="text-danger">
+                    city shold have only Characters.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">PINCODE</label>
+            <input type="number" class="form-control" formControlName="pincode"
+                [ngClass]="{'is-invalid' : formValidation['pincode'].invalid && (isSubmitted || formValidation['pincode'].touched || formValidation['pincode'].dirty),
+            'is-valid' : formValidation['pincode'].valid && (isSubmitted || formValidation['pincode'].touched || formValidation['pincode'].dirty)}">
+            <div class="invalid-feedback"
+                *ngIf="formValidation['pincode'].invalid && (isSubmitted || formValidation['pincode'].touched || formValidation['pincode'].dirty)">
+                <div *ngIf="formValidation['pincode'].errors && formValidation['pincode'].errors['required']"
+                    class="text-danger">pincode is required.</div>
+                <div *ngIf="formValidation['pincode'].errors?.['pattern']" class="text-danger">
+                    pincode shold have only numbers.
+                </div>
+            </div>
+        </div>
+        <div><button type="button" class="btn btn-primary me-3" (click)="onSave()">SAVE</button>
+            <button type="button" class="btn btn-success" (click)="onReset()">RESET</button>
+        </div>
+    </form>
+</div>
+<app-interns-list [details]="data"></app-interns-list>

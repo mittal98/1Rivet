@@ -95,7 +95,7 @@ export class ObservableComponent implements OnInit {
     keyup
       .pipe(
         map((i: any) => i.currentTarget.value),
-        debounceTime(50000)
+        debounceTime(5000)
       )
       .subscribe(console.log);
 
@@ -107,32 +107,6 @@ export class ObservableComponent implements OnInit {
         tap(val => console.log(`AFTER : ${val}`))
       )
       .subscribe(val => console.log(val));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //map operator
     console.log("map");
     let m = from([4, 6, 7, 8, 9]);

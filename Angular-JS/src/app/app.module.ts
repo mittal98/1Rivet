@@ -24,11 +24,12 @@ import { ObservableComponent } from './observable/observable.component';
     ReplaySubjectComponent,
     AsyncSubjectComponent,
     ObservableComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

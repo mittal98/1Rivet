@@ -1,8 +1,7 @@
 export class User {
- 
+    public id?: number;
     public name?: string;
-    public gender?: string;
     public dob?: string;
+    public department?: string;
     public salary?: string;
-    public id?: number; 
 }

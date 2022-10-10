@@ -18,7 +18,6 @@ export class EmployeeFormComponent implements OnInit {
 
   constructor(private employeeService: EmployeeService,
     private activatedRouter: ActivatedRoute) {
-    this.employeeForm = new FormGroup('');
     this.formbuilder = new FormBuilder;
     this.userid = ''
     this.data = []
