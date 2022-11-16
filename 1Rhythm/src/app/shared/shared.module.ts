@@ -5,6 +5,7 @@ import { CardComponent } from './card/card.component';
 import { PhoneMaskingDirective } from './directives/phone-masking.directive';
 import { ManageProfileComponent } from './manage-profile/manage-profile.component';
 import { SearchPipe } from './pipes/search.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -17,7 +18,14 @@ import { SearchPipe } from './pipes/search.pipe';
     SearchPipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
+  ],
+  exports:[
+    CardComponent
+  ],
+  providers:[
+  
   ]
 })
 export class SharedModule { }

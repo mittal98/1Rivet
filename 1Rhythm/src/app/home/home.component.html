@@ -1,8 +1,51 @@
-<!-- <div *ngFor="let artist of artistList;" class="card">
-    <img src="{{artist.image}}" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title">{{artist.title}}</h5>
-        <p class="card-text">{{artist.description}}</p>
+<div class="main-wrapper overflow-auto h-100">
+    <div class="row gx-0">
+        <div class="col">
+            <ngb-carousel class="col carouselwrapper overflow-hidden" [showNavigationArrows]="false" *ngIf="images">
+                <ng-template ngbSlide *ngFor="let event of lastFiveData">
+                    <div class="picsum-img-wrapper">
+                        <img class="w-100" src="{{event.img}}" alt="Random first slide" />
+                    </div>
+                    <div class="carousel-text-wrapper ">
+                        <div class="carousel-text text-white">
+                            <h5>MOST POPULAR</h5>
+                            <span class="text-white crtext">CREATIVE SPACE </span> <span
+                                class="text-white crtext-role">STUDIO</span>
+                            <h4 class="text-truncate description">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit.
+                                Distinctio minima dolorem
+                                ullam,
+                                officiis quibusdam libero magnam adipisci.</h4>
+                            <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center">View
+                                Details</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
     </div>
-    <a href="#" class="btn">View Details</a>
-</div> -->
+ <!-- Explore Studio -->
+ <div class="card-title-wrapper row gx-0 d-flex justify-content-between">
+    <div class="d-flex justify-content-between align-items-center">
+        <span class="explore-text text-nowrap">Explore Studio</span>
+        <span class="see-all-text text-primary text-nowrap">SEE ALL</span>
+    </div>
+</div>
+<div class="Explore-studio row gx-0 d-flex justify-content-between">
+    <div class="col-xxl-2 col-xl-3 col-lg-6 col-md-6  col-xs-12 cards" *ngFor="let event of [1,2,3,4,5]">
+        <app-card></app-card>
+    </div>
+</div>
+<!-- Explore Artist -->
+<div class="card-title-wrapper row gx-0 d-flex justify-content-between">
+    <div class="d-flex justify-content-between align-items-center">
+        <span class="explore-text text-nowrap">Explore Artist</span>
+        <span class="see-all-text text-primary text-nowrap">SEE ALL</span>
+    </div>
+</div>
+<div class="Explore-studio row gx-0 d-flex justify-content-between">
+    <div class="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-xs-12 cards" *ngFor="let event of [1,2,3,4,5]">
+        <app-card></app-card>
+    </div>
+</div>
+</div>

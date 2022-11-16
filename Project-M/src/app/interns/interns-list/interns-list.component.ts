@@ -11,7 +11,8 @@ export class InternsListComponent implements OnInit {
   @Input() public details: any;
 
   constructor(private internsService: InternsService,
-    public route: Router) {
+    public route: Router)
+     {
     this.details = [];
   }
 
@@ -29,7 +30,12 @@ export class InternsListComponent implements OnInit {
       this.getInternsData();
     })
   }
-  onEdit(){
-
-}
+   // details 
+   onDetails(interns: any) {
+    this.route.navigate(['interns/details', interns.id])
+  }
+  //service for update data
+  onEdit(itemID: number): void {
+    this.route.navigate(['interns/edit/' + itemID])
+  }
 }

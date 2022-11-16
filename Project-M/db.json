@@ -39,16 +39,6 @@
       "mobile": 123456789,
       "city": "valsad",
       "pincode": 396001
-    },
-    {
-      "id": 2,
-      "firstname": "mittal",
-      "lastname": "patel",
-      "email": "mittalpatel9802@gmail.com",
-      "department": "dgfdgg",
-      "mobile": 45453,
-      "city": "htrhtrh",
-      "pincode": 45435
     }
   ]
 }

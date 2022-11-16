@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { interns } from '../interns.model';
 import { InternsService } from '../interns.service';
 
@@ -13,11 +14,16 @@ export class InternsFormComponent implements OnInit {
   public InternsForm: FormGroup;
   public isSubmitted: boolean;
   public data: interns[];
+  internsid: string;
 
 
   constructor(public formBuilder: FormBuilder,
-    private internsService: InternsService
-  ) {
+    private internsService: InternsService,
+    private activatedRouter: ActivatedRoute) {
+    this.data = []
+    this.internsid = ''
+
+
     this.InternsForm = this.formBuilder.group({
       id: [],
       firstname: ['', [Validators.required, Validators.minLength(3)]],
@@ -29,29 +35,53 @@ export class InternsFormComponent implements OnInit {
       pincode: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]]
     });
     this.isSubmitted = false;
-    this.data = []
+    
+    this.activatedRouter.params.subscribe((res: any) => {
+      this.internsid = res.id;
+      if (this.internsid) {
+        this.getInternsById()
+      }
+    })
   }
 
   ngOnInit(): void {
-    this.getUserdata();
+    this.getInternsData();
   }
   get formValidation(): { [key: string]: AbstractControl } {
     return this.InternsForm.controls;
   }
-  public getUserdata(): void {
-    this.internsService.getInterns().subscribe((result: interns[]) => {
-      this.data = result;
-    });
-  }
-  public onSave(): void {
+
+
+  public onSave():void {
     this.isSubmitted = true;
     if (this.InternsForm.valid) {
-      this.internsService.addInterns(this.InternsForm.value).subscribe(() => {
-        this.getUserdata();
-      })
+      if (this.internsid) {
+        this.internsService.updateInterns(this.InternsForm.value, Number(this.internsid)).subscribe(() => {
+          this.getInternsData();
+        })
+      }
+      else {
+        this.internsService.addInterns(this.InternsForm.value).subscribe(() => {
+          this.getInternsData();
+        })
+      }
     }
   }
   onReset() {
     this.InternsForm.reset();
+  }
+  public getInternsData(): void {
+    this.internsService.getInterns().subscribe((result: interns[]) => {
+      this.data = result;
+    });
+  }
+ 
+  getInternsById() {
+    this.internsService.getInternsById(Number(this.internsid)).subscribe((Response: interns) => {
+      this.InternsForm.patchValue(Response)
+    })
+  }
+  onEdit(item: any) {
+    this.InternsForm.patchValue(item)
   }
 }

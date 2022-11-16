@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MasterComponent } from './master/master.component';
 import { HeaderComponent } from './navbar/header/header.component';
 import { RouterModule } from '@angular/router';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,9 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   exports:[
     MasterComponent,HeaderComponent

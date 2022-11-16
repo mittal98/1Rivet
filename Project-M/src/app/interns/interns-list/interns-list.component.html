@@ -23,9 +23,9 @@
                 <td>{{item.city}}</td>
                 <td>{{item.pincode}}</td>
                 <td>
-                    <button type="submit" class="btn btn-primary me-2" (click)="onEdit" >EDIT</button>
-                    <button type="submit" class="btn btn-success me-2" (click)="onDelete(item.id)">DELETE</button>
-                    <button type="submit" class="btn btn-danger">DETAILS</button>
+                    <button type="submit" class="btn btn-primary me-2" (click)="onEdit(item.id)" >EDIT</button>
+                    <button type=" submit" class="btn btn-success me-2" (click)="onDelete(item.id)">DELETE</button>
+                    <button type="submit" class="btn btn-danger" (click)="onDetails(item)">DETAILS</button>
                 </td>
             </tr>
         </tbody>
